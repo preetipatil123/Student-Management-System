@@ -1,0 +1,163 @@
+/* Define attractive colors */
+
+
+:root {
+  --primary-color:#DAA520; 
+  --secondary-color:#FFF0F5; 
+  --accent-color:#DAA520;
+}
+
+body {
+  background: linear-gradient(to bottom,#DAA520, #FFF0F5);
+  color: white;
+  font-family: Arial, sans-serif;
+ font-size: 40px;
+  color: #333;
+}
+
+.navbar {
+  background-color:#FF1493; 
+  overflow: hidden;
+}
+
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+.navbar a:hover {
+  background-color: #ddd; 
+  color: black;
+
+}
+
+
+.navbar a.active {
+  background-color: #4CAF50; 
+}
+
+a {
+  color:#FFF8DC;"; 
+}
+a:hover {
+  color: #000000;
+}
+
+
+/* Add animation to headings */
+h1, h2, h3 {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+input[type="number"],
+input[type="text"],
+input[type="password"],
+
+button {
+  padding: 30px;
+  font-size: 30px;
+  width: 60%; 
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+
+
+input[type="submit"],
+button {
+  padding: 0px;
+  font-size:50px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+
+}
+
+input[type="button"],
+button {
+  padding: 0px;
+  font-size:60px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+
+}
+
+table th {
+  font-size:30px;
+}
+
+table td input[type="text"],
+table td input[type="number"] {
+  font-size:"40px";
+  width: 100%; 
+  padding: 20px;   
+}
+
+h1 {
+  background-color:#778899;
+  color: white;
+  padding: 2px; 4px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Add animation to buttons */
+.button {
+  display: inline-block;
+  padding:20px 20px;
+  margin: 10px;
+font size: 30px;
+  background-color: var(#FF1493);
+  color: white;
+  border: none;
+  border-radius: 30;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Add interactive element */
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.pulse-animation {
+  animation: pulse 2s infinite;
+}
